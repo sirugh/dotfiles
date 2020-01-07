@@ -58,5 +58,6 @@
 	"window.newWindowDimensions": "maximized",
 	"workbench.iconTheme": "vscode-icons",
 	"debug.console.fontSize": 20,
-	"markdown.preview.fontSize": 20
+	"markdown.preview.fontSize": 20,
+	"window.zoomLevel": 1
 }

@@ -2,6 +2,7 @@
 composer global require weprovide/valet-plus
 valet fix
 valet install
+valet use 7.2
 
 # TODO: Update with if/else for echo
 ping -c1 foobar.test
