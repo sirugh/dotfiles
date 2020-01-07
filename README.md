@@ -23,17 +23,9 @@
 
 ### Dependencies
 
-First, make sure you have all those things installed:
-
-- `git`: to clone the repo
-- `curl`: to download some stuff
-- `tar`: to extract downloaded stuff
-- `zsh`: to actually run the dotfiles
-- `sudo`: some configs may need that
-
 ### Install
 
-Then, run these steps:
+Assuming you have already run steps 1 and 2 from [this repo](https://github.com/sirugh/macOS)...
 
 ```console
 $ git clone https://github.com/sirugh/dotfiles.git ~/.dotfiles
