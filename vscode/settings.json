@@ -8,7 +8,7 @@
 	},
 	"editor.cursorBlinking": "phase",
 	"editor.fontFamily": "Hack, 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
-	"editor.fontWeight": "600",
+	"editor.fontWeight": "500",
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": false,
 	"editor.renderWhitespace": "none",
@@ -53,8 +53,10 @@
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.fontAliasing": "auto",
 	"workbench.editor.showIcons": true,
-	"window.zoomLevel": 0,
 	"window.restoreWindows": "none",
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
-	"window.newWindowDimensions": "maximized"
+	"window.newWindowDimensions": "maximized",
+	"workbench.iconTheme": "vscode-icons",
+	"debug.console.fontSize": 20,
+	"markdown.preview.fontSize": 20
 }
