@@ -12,6 +12,7 @@ autoload -U edit-command-line
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+HISTIGNORE="ll:ls:la"
 
 # don't nice background tasks
 setopt NO_BG_NICE
@@ -71,7 +72,6 @@ bindkey '^?' backward-delete-char
 
 # delete word with ctrl+backspace
 bindkey '^[[3;5~' backward-delete-word
-# bindkey '^[[3~' backward-delete-word
 
 # edit command line in $EDITOR
 bindkey '^e' edit-command-line

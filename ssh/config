@@ -1,6 +1,9 @@
 Host *
+  AddKeysToAgent yes
   ServerAliveInterval 60
   StrictHostKeyChecking no
   UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+  ProxyCommand bash -c '( nc -G 1 %h %p || open http://austin-ssh-out.corp.adobe.com/)'
 
 Include ~/.ssh/config.local
