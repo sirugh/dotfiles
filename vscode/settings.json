@@ -3,7 +3,6 @@
 	"editor.fontSize": 15,
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": true,
 		"source.fixAll.eslint": true
 	},
 	"editor.cursorBlinking": "phase",
@@ -12,7 +11,10 @@
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": false,
 	"editor.renderWhitespace": "none",
-	"editor.rulers": [80, 120],
+	"editor.rulers": [
+		80,
+		120
+	],
 	"editor.smoothScrolling": true,
 	"editor.tabSize": 4,
 	"editor.trimAutoWhitespace": true,
@@ -26,7 +28,6 @@
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
 	"javascript.implicitProjectConfig.experimentalDecorators": true,
 	"javascript.validate.enable": false,
 	"merge-conflict.diffViewPosition": "Beside",
