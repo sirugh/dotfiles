@@ -1,7 +1,6 @@
 {
 	"breadcrumbs.enabled": true,
 	"editor.fontSize": 15,
-	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},
@@ -60,5 +59,6 @@
 	"workbench.iconTheme": "vscode-icons",
 	"debug.console.fontSize": 20,
 	"markdown.preview.fontSize": 20,
-	"window.zoomLevel": 1
+	"window.zoomLevel": 1,
+	"editor.formatOnSave": true
 }
