@@ -7,7 +7,6 @@ github.vscode-pull-request-github
 eamodio.gitlens
 kumar-harsh.graphql-for-vscode
 wix.vscode-import-cost
-orta.vscode-jest
 davidanson.vscode-markdownlint
 pkief.material-icon-theme
 dawhite.mustache
