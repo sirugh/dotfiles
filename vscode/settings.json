@@ -59,8 +59,9 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"debug.console.fontSize": 20,
 	"markdown.preview.fontSize": 20,
-	"window.zoomLevel": 1,
+	"window.zoomLevel": 0,
 	"vsicons.dontShowNewVersionMessage": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"git.autofetch": true
 }
