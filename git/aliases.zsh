@@ -9,7 +9,7 @@ alias gp='git push origin HEAD'
 alias gpa='git push origin --all'
 alias gpn='git push origin HEAD --no-verify'
 alias gd='git diff'
-alias gb='git branch -v'
+alias gb="git branch -vv --sort=-committerdate --format='%(align:20)%(color:green)%(committerdate:relative)%(color:reset)%(end)%(align:'$(($(tput cols) - 30))')%(color:yellow)%(refname:short)%(color:reset)%(color:blue)[%(upstream:trackshort)]%(color:reset)%(end) %(align:20,right)%(color:white)%(authorname)%(color:reset)%(end)'"
 alias ga='git add'
 alias gaa='git add -A'
 alias gap='git add -p'
