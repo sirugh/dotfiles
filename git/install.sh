@@ -17,3 +17,8 @@ if command -v code >/dev/null 2>&1; then
 	git config --global merge.tool vscode
 	git config --global mergetool.vscode.cmd "code --wait $MERGED"
 fi
+
+# set some basic defaults
+git config --global diff.colorMoved zebra
+git config --global fetch.prune true
+git config --global pull.rebase true
