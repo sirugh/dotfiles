@@ -39,11 +39,39 @@ done
 
 unset config_files updated_at
 
-# use .localrc for SUPER SECRET CRAP that you don't
-# want in your public, versioned repo.
 # shellcheck disable=SC1090
-[ -f ~/.localrc ] && . ~/.localrc
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# python env init from
+# https://opensource.com/article/19/5/python-3-default-mac#what-to-do
+#https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export WORKON_HOME=$HOME/.virtualenvs   # Optional
+mkdir -p $WORKON_HOME
+. ~/.pyenv/versions/3.9.0/bin/virtualenvwrapper.sh
+# source /Users/stephen/.pyenv/shims/virtualenvwrapper.sh
+
+export KUBECONFIG=~/Documents/kubeconfig.yml
+export VAULT_ADDR=https://vault-amer.dev.adobe.net
+export JAVA_HOME=`/usr/libexec/java_home -v 11.0.11`
+
+# alias for enable/disable xdebug
+# from https://medium.com/@kayintveen/easily-enable-and-disable-xdebug-275f7edc5bad
+alias exd="mv /usr/local/etc/valet-php/7.4/conf.d/xdebug.ini.dis /usr/local/etc/valet-php/7.4/conf.d/xdebug.ini"
+alias dxd="mv /usr/local/etc/valet-php/7.4/conf.d/xdebug.ini /usr/local/etc/valet-php/7.4/conf.d/xdebug.ini.dis"
+
+# BEGIN SNIPPET: Magento Cloud CLI configuration
+HOME=${HOME:-'/Users/stephen'}
+export PATH="$HOME/"'.magento-cloud/bin':"$PATH"
+if [ -f "$HOME/"'.magento-cloud/shell-config.rc' ]; then . "$HOME/"'.magento-cloud/shell-config.rc'; fi # END SNIPPET
+
+# use ./secrets.zsh for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
+source ./secrets.zsh

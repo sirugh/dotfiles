@@ -1,35 +1,78 @@
 {
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"beautify.ignore": "",
 	"breadcrumbs.enabled": true,
-	"editor.fontSize": 15,
+	"debug.console.fontSize": 20,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.accessibilitySupport": "off",
+	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},
 	"editor.cursorBlinking": "phase",
-	"editor.fontFamily": "Hack, 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "Hack,'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontSize": 15,
 	"editor.fontWeight": "500",
+	"editor.formatOnSave": true,
+	"editor.indentSize": "tabSize",
+	"editor.inlineSuggest.enabled": true,
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": false,
 	"editor.renderWhitespace": "none",
-	"editor.rulers": [
-		80,
-		120
-	],
+	"editor.rulers": [80, 120],
 	"editor.smoothScrolling": true,
-	"editor.tabSize": 4,
-	"editor.trimAutoWhitespace": true,
+	"editor.suggestSelection": "first",
 	"editor.tabCompletion": "on",
+	"editor.tabSize": 2,
+	"editor.trimAutoWhitespace": true,
 	"editor.wordWrap": "on",
+	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
 	"extensions.autoUpdate": true,
 	"extensions.ignoreRecommendations": false,
+	"files.associations": {
+		"*.module": "php"
+	},
 	"files.autoSave": "onFocusChange",
-	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.factorypath": true,
+		"**/.project": true,
+		"**/.settings": true
+	},
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.autofetch": true,
+	"gitlens.currentLine.pullRequests.enabled": false,
+	"gitlens.outputLevel": "debug",
+	"gitlens.rebaseEditor.ordering": "asc",
+	"gitlens.remotes": [
+		{
+			"domain": "git.corp.adobe.com",
+			"type": "GitHub"
+		}
+	],
+	"hediet.vscode-drawio.resizeImages": null,
+	"java.project.importOnFirstTimeStartup": "automatic",
 	"javascript.implicitProjectConfig.experimentalDecorators": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
 	"javascript.validate.enable": false,
+	"liveshare.authenticationProvider": "GitHub",
+	"markdown.preview.fontSize": 20,
 	"merge-conflict.diffViewPosition": "Beside",
+	"redhat.telemetry.enabled": false,
 	"search.exclude": {
 		"**/_site/**": true,
 		"**/bower_components": true,
@@ -38,30 +81,31 @@
 		"**/node_modules": true,
 		"**/public/**": true
 	},
+	"search.showLineNumbers": true,
 	"search.smartCase": true,
 	"search.useGlobalIgnoreFiles": true,
-	"search.showLineNumbers": true,
+	"svelte.enable-ts-plugin": true,
+	"svelte.language-server.runtime": "/Users/stephen/.nvm/versions/node/v14.17.3/bin/node",
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"terminal.external.osxExec": "iTerm.app",
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "line",
-	"telemetry.enableTelemetry": false,
-	"telemetry.enableCrashReporter": false,
-	"terminal.external.osxExec": "iTerm.app",
 	"terminal.integrated.fontSize": 14,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"vs-kubernetes": {
+		"vscode-kubernetes.minikube-path.mac": "/Users/stephen/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+	},
+	"vsicons.dontShowNewVersionMessage": true,
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"window.newWindowDimensions": "maximized",
+	"window.restoreWindows": "all",
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	"workbench.colorTheme": "Dracula",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.labelFormat": "medium",
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.fontAliasing": "auto",
 	"workbench.editor.showIcons": true,
-	"window.restoreWindows": "all",
-	"window.title": "${activeEditorMedium}${separator}${rootName}",
-	"window.newWindowDimensions": "maximized",
+	"workbench.fontAliasing": "auto",
 	"workbench.iconTheme": "material-icon-theme",
-	"debug.console.fontSize": 20,
-	"markdown.preview.fontSize": 20,
-	"window.zoomLevel": 0,
-	"vsicons.dontShowNewVersionMessage": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true,
-	"git.autofetch": true
+	"workbench.startupEditor": "newUntitledFile"
 }
