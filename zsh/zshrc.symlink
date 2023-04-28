@@ -72,6 +72,8 @@ HOME=${HOME:-'/Users/stephen'}
 export PATH="$HOME/"'.magento-cloud/bin':"$PATH"
 if [ -f "$HOME/"'.magento-cloud/shell-config.rc' ]; then . "$HOME/"'.magento-cloud/shell-config.rc'; fi # END SNIPPET
 
-# use ./secrets.zsh for SUPER SECRET CRAP that you don't
+# use ~/.localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
-source ./secrets.zsh
+if [ -f $HOME/.localrc ]; then
+	source $HOME/.localrc
+fi
